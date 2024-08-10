@@ -1,0 +1,33 @@
+/* Fonts */
+@import url("/assets/font/NotoKufiArabic.css");
+
+/* Global Rules */
+:root {
+  /* Colors */
+  --b-900: #293980;
+  --b-700: #394fb3;
+  --b-500: #5271ff;
+  --b-300: #869cff;
+  --b-200: #bac6ff;
+  --b-100: #eef1ff;
+  --light: #fff;
+  --dark: #123;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Noto Kufi Arabic";
+}
+
+body {
+  background-color: var(--light);
+  background-image: url("/assets/image/0101-BG.svg");
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100svh;
+}
