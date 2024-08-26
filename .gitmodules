@@ -1,0 +1,9 @@
+[submodule "assignments/html-assignments"]
+	path = assignments/html-assignments
+	url = https://github.com/abdsydev/elzero-HTML-assignments.git
+[submodule "assignments/css-assignments"]
+	path = assignments/css-assignments
+	url = https://github.com/abdsydev/elzero-CSS-assignments.git
+[submodule "assignments/js-assignments"]
+	path = assignments/js-assignments
+	url = https://github.com/abdsydev/elzero-JavaScript-assignments.git
