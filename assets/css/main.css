@@ -1,5 +1,7 @@
 /* Fonts */
 @import url("/assets/fonts/ibmplexsansarabic/ibmplexsansarabic.css");
+/* Icons */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
 
 /* Global Rules */
 :root {
@@ -20,6 +22,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "IBMPlexSansArabic";
+  color: var(--b-900);
 }
 
 html {
@@ -28,10 +31,6 @@ html {
 
 body {
   background-color: var(--light);
-  background-image: url("/assets/image/0101-BG.svg");
-  background-size: contain;
-  background-position: center;
-  background-attachment: fixed;
   width: 100%;
   height: 100svh;
 }
@@ -54,33 +53,98 @@ a {
 
 /* header start */
 .header {
-  max-width: 100%;
-  .headerContent {
-    height: 70px;
+  width: 100%;
+  background-color: var(--light);
+  box-shadow: 0 0 5px rgba(17, 34, 51, 0.3);
+  position: fixed;
+  top: 0;
+  right: 0;
+  .content {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    /* navbar start */
-    .navbar {
-      .navLinks {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-        .navLink {
-          font-size: 20px;
-          font-weight: 500;
+    align-items: center;
+    /* my brand css */
+    .myBrand {
+      width: fit-content;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      .myLogo {
+        width: 40px;
+      }
+      .myName {
+        & a {
+          transition: 0.3s color linear;
+        }
+        & a:hover {
           color: var(--dark);
-          opacity: 0.5;
-          transition: 0.3s linear opacity, 0.3s linear color;
-          &:hover {
-            color: var(--b-500);
-            opacity: 1;
-          }
         }
       }
     }
-    /* navbar end */
+    /* my brand end */
+
+    /* navbar css */
+    .navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      .navLinks {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        .navLink {
+          font-size: 18px;
+          font-weight: 600;
+          color: var(--b-900);
+          transition: 0.3s color linear;
+          position: relative;
+          &:hover {
+            color: var(--b-500);
+          }
+          &::after,
+          &::before {
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 3px;
+            background-color: var(--b-500);
+            bottom: -10px;
+            transition: 0.3s width linear;
+          }
+          &::after {
+            right: 50%;
+          }
+          &::before {
+            left: 50%;
+          }
+          &:hover::after {
+            width: 50%;
+          }
+          &:hover::before {
+            width: 50%;
+          }
+        }
+      }
+      .toggleDarkLight {
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        margin-bottom: -5px;
+        margin-right: -5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .fa-moon {
+          font-size: 26px;
+          color: rgba(41, 57, 128, 0.5);
+        }
+      }
+    }
+    /* navbar css end */
   }
 }
 /* header end */
