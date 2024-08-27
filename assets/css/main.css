@@ -51,11 +51,10 @@ a {
 }
 /* container end */
 
-/* header start */
+/* header css */
 .header {
   width: 100%;
-  background-color: var(--light);
-  box-shadow: 0 0 5px rgba(17, 34, 51, 0.3);
+  background-color: var(--b-500);
   position: fixed;
   top: 0;
   right: 0;
@@ -76,10 +75,7 @@ a {
       }
       .myName {
         & a {
-          transition: 0.3s color linear;
-        }
-        & a:hover {
-          color: var(--dark);
+          color: var(--light);
         }
       }
     }
@@ -99,19 +95,16 @@ a {
         .navLink {
           font-size: 18px;
           font-weight: 600;
-          color: var(--b-900);
+          color: var(--light);
           transition: 0.3s color linear;
           position: relative;
-          &:hover {
-            color: var(--b-500);
-          }
           &::after,
           &::before {
             content: "";
             position: absolute;
             width: 0%;
             height: 3px;
-            background-color: var(--b-500);
+            background-color: var(--light);
             bottom: -10px;
             transition: 0.3s width linear;
           }
@@ -147,4 +140,28 @@ a {
     /* navbar css end */
   }
 }
-/* header end */
+/* header css end */
+
+/* hero section css */
+.hero {
+  width: 100%;
+  height: 100svh;
+  background-color: var(--b-500);
+  .content {
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .heroAvatar {
+      width: 200px;
+      border-radius: 50%;
+      border: 2px solid var(--light);
+      outline: 3px solid rgba(41, 57, 128, 0.5);
+      transition: 0.3s transform linear;
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
+}
+/* hero section css end */
