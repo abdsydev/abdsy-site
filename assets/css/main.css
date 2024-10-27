@@ -40,6 +40,10 @@ a {
   color: var(--b-500);
 }
 
+hr {
+  margin: 20px 0;
+}
+
 /* container start */
 .container {
   width: 100%;
