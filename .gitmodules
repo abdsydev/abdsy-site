@@ -7,3 +7,9 @@
 [submodule "assignments/elzero-JavaScript-assignments"]
 	path = assignments/elzero-JavaScript-assignments
 	url = https://github.com/abdsydev/elzero-JavaScript-assignments.git
+	[submodule "freecodecamp/cafe-menu-fcc"]
+	path = freecodecamp/cafe-menu-fcc
+	url = https://github.com/abdsydev/cafe-menu-fcc.git
+	[submodule "freecodecamp/cat-photo-app-fcc"]
+	path = freecodecamp/cat-photo-app-fcc
+	url = https://github.com/abdsydev/cat-photo-app-fcc.git
