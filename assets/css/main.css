@@ -64,7 +64,7 @@ hr {
   right: 0;
   .content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     /* my brand css */
     .myBrand {
@@ -86,6 +86,7 @@ hr {
     /* my brand end */
 
     /* navbar css */
+    /*
     .navbar {
       display: flex;
       justify-content: center;
@@ -141,6 +142,7 @@ hr {
         }
       }
     }
+    /*
     /* navbar css end */
   }
 }
